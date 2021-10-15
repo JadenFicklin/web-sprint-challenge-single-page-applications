@@ -9,7 +9,9 @@ class Main extends Component {
           <div class="imgspacing">
             <img class="mainimg" src={pizza} alt="pizza" />
             <a href="#build-pizza">
-              <button>Pizza?</button>
+              <a href="./Form" class="main-button">
+                Order pizza here
+              </a>
             </a>
           </div>
           <div class="lower-main">

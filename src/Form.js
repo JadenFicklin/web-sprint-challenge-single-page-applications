@@ -112,9 +112,12 @@ class Form extends Component {
                 <input
                   type="text"
                   value={this.state.username}
+                  placeholder="Enter First Name"
                   onChange={this.handleUsernameChange}
+                  minLength={2}
                 />
               </div>
+              {/* - [ ] Validation for name and the error message is "name must be at least 2 characters" (Use this exact error message to make sure tests pass) ::: VERY IMPORTANT TO USE THAT EXACT ERROR MESSAGE (casing included!) */}
             </div>
             {/* comments */}
             <div className="commentsforpizza">

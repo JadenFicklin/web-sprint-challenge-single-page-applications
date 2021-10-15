@@ -8,10 +8,7 @@ class Finish extends Component {
           <div class="finish-background">Congrats! Pizza is on its way!</div>
           <div class="finish-gif-container">
             Enjoy this Dog with Pizza
-            <img
-              class="dog"
-              src="https://www.rover.com/blog/wp-content/uploads/2017/03/800_9397.jpg"
-            ></img>
+            <img class="dog" src="https://i.giphy.com/EQRgN1hTnd7RC.gif"></img>
           </div>
         </div>
       </div>

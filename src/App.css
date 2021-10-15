@@ -90,6 +90,15 @@
 img.mainimg {
   height: 695px;
 }
+
+.main-button {
+  position: absolute;
+  bottom: -450px;
+  right: 600px;
+  text-decoration: none;
+  color: white;
+  font-size: 100px;
+}
 .lower-main {
   display: flex;
   flex-direction: row;
@@ -225,6 +234,6 @@ h3 {
   font-size: 30px;
 }
 .dog {
-  height: 250px;
+  height: 300px;
   width: 300px;
 }
