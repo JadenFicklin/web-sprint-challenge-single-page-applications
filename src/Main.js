@@ -8,11 +8,12 @@ class Main extends Component {
         <div class="main-whole">
           <div class="imgspacing">
             <img class="mainimg" src={pizza} alt="pizza" />
-            <a href="#build-pizza">
-              <a href="./Form" class="main-button">
-                Order pizza here
-              </a>
-            </a>
+            <div
+              class="main-button"
+              onClick={() => this.props.changePage("form")}
+            >
+              Order pizza here
+            </div>
           </div>
           <div class="lower-main">
             <div class="box"></div>

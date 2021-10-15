@@ -5,23 +5,41 @@ import Form from "./Form";
 import Main from "./Main";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      selectedPage: "main",
+    };
+
+    this.changePage = this.changePage.bind(this);
+  }
+
+  changePage = (page) => {
+    this.setState({ selectedPage: page });
+  };
+
   render() {
     return (
       <div className="App">
         <div className="top">
           <h2>LAMBDA EATS</h2>
           <nav className="topnav">
-            <a href="Main.js" target="Main.js" className="navbutton">
+            <a className="navbutton" onClick={() => this.changePage("main")}>
               Home
             </a>
-            <a href="#" target="_blank" className="navbutton">
-              Help
-            </a>
+            <a className="navbutton">Help</a>
           </nav>
         </div>
-        <Form />
-        <Main />
-        <Finish />
+        {this.state.selectedPage === "main" && (
+          <Main changePage={this.changePage} />
+        )}
+        {this.state.selectedPage === "form" && (
+          <Form changePage={this.changePage} />
+        )}
+        {this.state.selectedPage === "finish" && (
+          <Finish changePage={this.changePage} />
+        )}
       </div>
     );
   }

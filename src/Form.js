@@ -38,13 +38,24 @@ class Form extends Component {
   };
 
   handleSubmit = (event) => {
-    alert(
-      `NAME: ${this.state.username} SPECIAL INSTRUCTIONS: ${
-        this.state.comments
-      } SIZE: ${this.state.topic} TOPPINGS: ${this.state.chosenIngredients.join(
-        ", "
-      )}`
-    );
+    if (this.state.username.length > 2) {
+      alert(
+        `NAME: ${this.state.username} SPECIAL INSTRUCTIONS: ${
+          this.state.comments
+        } SIZE: ${
+          this.state.topic
+        } TOPPINGS: ${this.state.chosenIngredients.join(", ")}`
+      );
+    } else {
+      alert(
+        `NAME: ${this.state.username} SPECIAL INSTRUCTIONS: ${
+          this.state.comments
+        } SIZE: ${
+          this.state.topic
+        } TOPPINGS: ${this.state.chosenIngredients.join(", ")}`
+      );
+      this.props.changePage("finish");
+    }
     event.preventDefault();
   };
   // this makes it so the user can only pick 4 of the toppings
