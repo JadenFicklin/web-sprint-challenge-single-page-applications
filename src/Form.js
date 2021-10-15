@@ -79,7 +79,7 @@ class Form extends Component {
         </div> */}
         {/* form portion */}
         <div className="outerwhole">
-          <div className="whole">
+          <div className="whole" id="build-pizza">
             {/* header */}
             <h1>Build Your Own Pizza</h1>
             {/* picture */}

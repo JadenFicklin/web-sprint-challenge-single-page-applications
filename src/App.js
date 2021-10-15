@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
+import Finish from "./Finish";
 import Form from "./Form";
 import Main from "./Main";
 
@@ -20,6 +21,7 @@ class App extends Component {
         </div>
         <Form />
         <Main />
+        <Finish />
       </div>
     );
   }

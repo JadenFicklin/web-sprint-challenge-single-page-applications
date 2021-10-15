@@ -8,7 +8,9 @@ class Main extends Component {
         <div class="main-whole">
           <div class="imgspacing">
             <img class="mainimg" src={pizza} alt="pizza" />
-            <button>Pizza?</button>
+            <a href="#build-pizza">
+              <button>Pizza?</button>
+            </a>
           </div>
           <div class="lower-main">
             <div class="box"></div>
