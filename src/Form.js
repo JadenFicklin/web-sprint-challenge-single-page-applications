@@ -70,13 +70,13 @@ class Form extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <div className="top">
+        {/* <div className="top">
           <h2>LAMBDA EATS</h2>
           <nav className="topnav">
             <div className="navbutton">Home</div>
             <div className="navbutton">Help</div>
           </nav>
-        </div>
+        </div> */}
         {/* form portion */}
         <div className="outerwhole">
           <div className="whole">

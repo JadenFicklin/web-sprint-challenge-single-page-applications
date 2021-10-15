@@ -74,6 +74,35 @@
     transform: rotate(360deg);
   }
 }
+/* main page styling below */
+.mainspacing {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.main-whole {
+  width: 1600px;
+  background-color: rgb(246, 239, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+img.mainimg {
+  height: 695px;
+}
+.lower-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(246, 239, 255);
+}
+.box {
+  height: 200px;
+  width: 350px;
+  background-color: lightgray;
+  display: flex;
+  margin: 50px;
+}
 
 /* form styling below*/
 h2 {
