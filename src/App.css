@@ -36,3 +36,128 @@
     transform: rotate(360deg);
   }
 }
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* form styling below*/
+h2 {
+  color: red;
+}
+
+h1 {
+  border-bottom: solid 1px black;
+  padding-bottom: 25px;
+  background-color: white;
+  margin-top: 0px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 430px;
+}
+
+.navbutton {
+  border: 1px solid black;
+  background-color: white;
+  padding: 5px 30px;
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.whole {
+  border: solid black 1px;
+  background-color: rgb(235, 235, 235);
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+.outerwhole {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: 350px;
+}
+
+h3 {
+  display: flex;
+  background-color: white;
+  padding: 10px 0px 10px 80px;
+  border: 1px solid black;
+  font-size: 30px;
+}
+
+.sizeofpizza {
+  padding: 20px;
+  border: 1px solid black;
+  margin-top: -30px;
+}
+
+.checkboxes {
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.nameofpizza {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.commentsforpizza {
+  padding: 20px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.submitforpizza {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid black;
+}
